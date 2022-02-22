@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #@ workload.metadata.name
+spec:
+  serviceAccountName: #@ data.values.service_account_name
+  selector:
+    matchLabels:
+      app: #@ workload.metadata.name
+  template:
+    metadata:
+      labels:
+        app: #@ workload.metadata.name
+    spec:
+      containers:
+        - name: main
+          image: #@ images.image.image
