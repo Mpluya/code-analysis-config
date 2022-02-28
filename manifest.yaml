@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: code-analysis
 spec:
-  serviceAccountName: another
+  serviceAccountName: demo
   selector:
     matchLabels:
       app: code-analysis
@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: main
-          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:54e821651f1300e9d1fc5194453119e54f55c4f710a236032d3da8ed9dd9770a
+          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:8656ef6ad5a92fdd14bd819eeecfcc377ae1fe07b7f661e26b261ed2bb237b93
