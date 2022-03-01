@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: main
-          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:3d6e5a297a6259a46a29b7185103cc8914876b8dc4fe0bb5833476c1370bfdf5
+          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:6b780c102ec01ca6d50152e13a311001b5aa5006de8ce679f1152d2ff7f77c2c
