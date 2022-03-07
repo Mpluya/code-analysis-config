@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: code-analysis + -app
+  name: code-analysis-app
 spec:
   serviceAccountName: demo
   selector:
@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: main
-          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:221bf4d93c16fa0196c66927e519730f9f5c3a581c766b6ce8d9c8f5f8a9f9be
+          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:bd558b69aeceee16573e35542cbfffaf17f2312d9cdf0a7f83c261f067ec1978
