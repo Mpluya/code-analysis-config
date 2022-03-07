@@ -1,10 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations: 
-    kapp.k14s.io/disable-default-label-scoping-rules: ''
-    kapp.k14s.io/disable-default-ownership-label-rules: ''
-  name: code-analysis
+  name: code-analysis + -app
 spec:
   serviceAccountName: demo
   selector:
@@ -17,4 +14,4 @@ spec:
     spec:
       containers:
         - name: main
-          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:6ed540178be7c527e263169eef30ea1c315b996f2d978fd7fe9cf982eb66e668
+          image: harbor-repo.vmware.com/tapsme/cartographer-code-analysis@sha256:221bf4d93c16fa0196c66927e519730f9f5c3a581c766b6ce8d9c8f5f8a9f9be
